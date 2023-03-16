@@ -16,3 +16,20 @@
 .contacts{
     margin-top: 190px;
 }
+
+
+@media (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .contacts{
+        margin-top: 0px;
+    }
+
+    .image_wrapper {
+        width: 0;
+        height: 0;
+    }
+  }

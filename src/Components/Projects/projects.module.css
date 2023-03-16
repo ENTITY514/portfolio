@@ -5,6 +5,7 @@
 }
 
 .title{
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -16,7 +17,7 @@
         -8px -8px 16px #ffffff;
     width: 300px;
     height: 200px;
-
+    margin: auto;
 }
 
 .description{
@@ -36,3 +37,21 @@
     justify-items: center;
     min-height: 300px;
 }
+
+
+@media (max-width: 800px) {
+    .project{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sub_box{
+        margin: 20px;
+    }
+
+    iframe{
+        width:300px;
+        height: 200px;
+    }
+    
+  }
