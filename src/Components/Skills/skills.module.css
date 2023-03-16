@@ -17,7 +17,7 @@
 .skills{
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 .lib_box{
