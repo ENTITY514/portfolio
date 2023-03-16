@@ -1,0 +1,21 @@
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-top: 100px;
+  color: rgb(73, 73, 73);
+  background: #c8c8c8;
+  grid-gap: 40px;
+}
+
+.box {
+  padding: 20px;
+  width: 800px;
+  background: linear-gradient(315deg, #e2e2e2, #ffffff);
+  border-radius: 20px;
+  box-shadow: 15px 15px 42px #6b6b6b,
+    -15px -15px 42px #ffffff;
+  margin-bottom: 100px;
+}

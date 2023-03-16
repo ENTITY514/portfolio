@@ -1,0 +1,27 @@
+.container {
+    min-height: 400px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    margin-bottom: 40px;
+}
+
+.box{
+    display: grid;
+    grid-gap: 40px;
+}
+
+.name{
+    margin-bottom:20px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.lib_box{
+    font-weight: bolder;
+}
+
+ul, li { margin-left: 20px; }

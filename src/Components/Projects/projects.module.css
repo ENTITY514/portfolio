@@ -1,0 +1,38 @@
+.container {
+    min-height: 400px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+
+.image_wrapper {
+    border-radius: 22px;
+    background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+    box-shadow: 8px 8px 16px #626262,
+        -8px -8px 16px #ffffff;
+    width: 300px;
+    height: 200px;
+
+}
+
+.description{
+    padding-right: 30px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    margin-bottom: 20px;
+    justify-items: center;
+    min-height: 300px;
+}
