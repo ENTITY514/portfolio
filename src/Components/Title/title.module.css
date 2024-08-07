@@ -1,7 +1,6 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 340px;
-    height: 400px;
 }
 
 
@@ -32,7 +31,7 @@
 
     .image_wrapper {
         width: 300px;
-        height: 300px;
+        height: 360px;
         margin: 20px auto;
     }
 }
