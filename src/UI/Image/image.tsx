@@ -1,3 +1,4 @@
+import React from "react"
 import style from "./image.module.css"
 
 interface IImageProps {
@@ -6,13 +7,28 @@ interface IImageProps {
 }
 
 export const ImageUI: React.FC<IImageProps> = ({ url, cover = false }) => {
-    return (
-        <div className={style.container} >
-            <div className={style.img} style={
-                {
-                    backgroundImage: "url(" + url + ")",
-                    backgroundSize: cover ? "cover" : "contain"
-                }}></div>
-        </div >
-    )
+    const [isView, setIsView] = React.useState<boolean>(false)
+    if (isView) {
+        return (
+            <div className={style.container} onClick={() => { setIsView(true) }}>
+                <div className={style.img} style={
+                    {
+                        backgroundImage: "url(" + url + ")",
+                        backgroundSize: cover ? "cover" : "contain"
+                    }}></div>
+            </div >
+        )
+
+    }
+    else {
+        return (
+            <div className={style.container} onClick={() => { setIsView(true) }}>
+                <div className={style.img} style={
+                    {
+                        backgroundImage: "url(" + url + ")",
+                        backgroundSize: cover ? "cover" : "contain"
+                    }}></div>
+            </div >
+        )
+    }
 }
